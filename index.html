@@ -1,1 +1,32 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac Bretzel</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="pacBretzel.js"></script>
+</head>
+<body>
+    <div id="outer-game-container">
+        <div id="game-container">
+            <div id="lives-container">
+                <img src="life.png" alt="Life" class="life">
+                <img src="life.png" alt="Life" class="life">
+                <img src="life.png" alt="Life" class="life">
+            </div>
+            <img src="logopacbretzel.png" alt="Logo Pac Bretzel" id="logo-pac-bretzel">
+            <audio id="background-music" src="pacbretsic.mp3" loop autoplay></audio>
+            <button id="sound-toggle">Musique</button>
+            <div id="maze-container">
+                <!-- Le labyrinthe sera généré dynamiquement dans le fichier script.js -->
+            </div>
+        </div>
+        <div id="stats-container">
+            <button id="restart-button">Recommencer</button>
+            <div id="score-container">Score: <span id="score">0</span></div>
+            <div id="lives-display"></div>
+        </div>
+    </div>
+</body>
+</html>
